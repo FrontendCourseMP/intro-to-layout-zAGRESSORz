@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formcss.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="visually-hidden">Mpassistant аналитика и оцифровка продаж Wildberries и Ozon</h1>
+            <a href="" class="header__logo logo">
+                <img src="images/small-logo.svg" alt="логотип mpassistant" class="logo__img">
+            </a>
+            <nav class="header__menu menu">
+                <a href="" class="menu__reg reg">
+                    <img src="images/entrance.svg" alt="" class="reg__img">
+                </a>
+                <a href="" class="menu__burger burger">
+                    <img src="images/burger.svg" alt="" class="burger__img">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="form">
+            <div class="form__wrapper">
+                <form action="//httpbin.org/post" class="form__hero hero" method="post">
+                    <h2 class="hero__title">Регистрация пользователя</h2>
+                    <fieldset class="hero__fieldset">
+                            <label class="group__label">
+                                <span class="group__span">Имя:</span>
+                                <input type="text" class="group__input" name="name" placeholder="Введите ваше имя"
+                                required>
+                            </label>
+                            <label class="group__label">
+                                <span class="group__span">Дата рождения:</span>
+                                <input type="date" class="group__input" name="dob" required>
+                            </label>
+                            <label class="group__label">
+                                <span class="group__span">Пол:</span>
+                            </label>
+                            <label class="group__label">
+                                <input type="radio" class="group__input--radio" name="gender" required>
+                                <span class="group__span">Мужской</span>
+                            </label>
+                            <label class="group__label">
+                                <input type="radio" class="group__input--radio" name="gender" required>
+                                <span class="group__span">Женский</span>
+                            </label>
+                            <label class="group__label">
+                                <input type="radio" class="group__input--radio" name="gender" required>
+                                <span class="group__span">Не указано</span>
+                            </label>
+                    </fieldset>
+                    <fieldset class="hero__fieldset">
+                            <label class="group__label">
+                                <span class="group__span">Почта:</span>
+                                <input type="email" class="group__input" name="email" placeholder="Введите ваш email"
+                                required>
+                            </label>
+                            <label class="group__label">
+                                <span class="group__span">Пароль:</span>
+                                <input type="password" class="group__input" name="password"
+                                placeholder="Введите ваш пароль" required>
+                            </label>
+                            <label class="group__label">
+                                <span class="group__span">Удобный интервал для связи:</span>
+                                <select class="group__select" name="contact-time">
+                                    <option value="morning">Утро</option>
+                                    <option value="day">День</option>
+                                    <option value="evening">Вечер</option>
+                                    <option value="night">Ночь</option>
+                                </select>
+                            </label>
+                    </fieldset>
+                    <div class="hero__group group">
+                        <input type="submit" class="group__input" value="Отправить">
+                        <input type="reset" class="group__input" value="Сбросить">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <a href="" class="footer__logo logo">
+                <img src="images/small-logo.svg" alt="Логотип Mpassistant" class="logo__img">
+            </a>
+            <h2 class="footer__subtitle">
+                Аналитика и оцифровка продаж
+                <span class="footer__subtitle footer__subtitle--purple">Wildberries</span> и
+                <span class="footer__subtitle footer__subtitle--blue">Ozon</span>
+            </h2>
+            <ul class="footer__social-services social-services">
+                <li class="social-services__item">
+                    <a href="" class="social-services__logo logo">
+                        <img src="images/vk.svg" alt="ссылка на группу компании в вк" class="logo__social">
+                    </a>
+                </li>
+                <li class="social-services__item">
+                    <a href="" class="social-services__logo logo">
+                        <img src="images/tg.svg" alt="ссылка на группу компании в телеграме" class="logo__social">
+                    </a>
+                </li>
+                <li class="social-services__item">
+                    <a href="" class="social-services__logo logo">
+                        <img src="images/youtube.svg" alt="ссылка на канал компании в ютубе" class="logo__social">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__container">
+                <div class="footer__service service">
+                    <h3 class="service__subtitle">Сервис</h3>
+                    <nav class="service__navigation navigation">
+                        <a href="" class="navigation__button">Для кого</a>
+                        <a href="" class="navigation__button">Возможности</a>
+                        <a href="" class="navigation__button">Тарифы</a>
+                    </nav>
+                </div>
+                <div class="footer__clients clients">
+                    <h3 class="clients__subtitle">Клиентам</h3>
+                    <nav class="clients__navigation navigation">
+                        <a href="" class="navigation__button">Вход</a>
+                        <a href="" class="navigation__button">Регистрация</a>
+                        <a href="" class="navigation__button">Восстановления пароля</a>
+                    </nav>
+                </div>
+                <div class="footer__documentation documentation">
+                    <h3 class="documentation__subtitle">Документы</h3>
+                    <nav class="documentation__navigation navigation">
+                        <a href="" class="navigation__button">Пользовательское соглашение</a>
+                        <a href="" class="navigation__button">Политика конфиденциальности</a>
+                        <a href="" class="navigation__button">Публичная оферта</a>
+                        <a href="" class="navigation__button">Использование cookie</a>
+                        <a href="" class="navigation__button">Техническая поддержка</a>
+                    </nav>
+                </div>
+            </div>
+            <ul class="footer__payment payment">
+                <li class="payment__cards">
+                    <a href="" class="payment__card">
+                        <img src="images/modulbank.png" alt="поддержка оплаты банковской картой модульбанк"
+                            class="payment__img">
+                    </a>
+                </li>
+                <li class="payment__cards">
+                    <a href="" class="payment__card">
+                        <img src="images/visa.png" alt="поддержка оплаты банковской картой visa" class="payment__img">
+                    </a>
+                </li>
+                <li class="payment__cards">
+                    <a href="" class="payment__card">
+                        <img src="images/mastercard.png" alt="поддержка оплаты банковской картой mastercard"
+                            class="payment__img">
+                    </a>
+                </li>
+                <li class="payment__cards">
+                    <a href="" class="payment__card">
+                        <img src="images/maestro.png" alt="поддержка оплаты банковской картой maestro"
+                            class="payment__img">
+                    </a>
+                </li>
+                <li class="payment__cards">
+                    <a href="" class="payment__card">
+                        <img src="images/mir.png" alt="поддержка оплаты банковской картой мир" class="payment__img">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copyright">© 2022-2023 mpassistant</p>
+            <p class="footer__text">Информация, размещённая на сайте, не является публичной офертой</p>
+            <p class="footer__designer">Редизайн сайта
+                <span class="footer__designer footer__designer--green">Turkuletdesign</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
