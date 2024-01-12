@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Main</title>
+    <title>Сластников Кирилл</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <h1 class="visually-hidden">Mpassistant аналитика и оцифровка продаж Wildberries и Ozon</h1>
-            <a href="" class="header__logo logo">
-                <img src="images/small-logo.svg" alt="логотип mpassistant" class="logo__img">
-            </a>
-            <nav class="header__menu menu">
-                <a href="" class="menu__reg reg">
-                    <img src="images/entrance.svg" alt="" class="reg__img">
+        <div class="header-wrapper">
+            <h1 class="visual">Mpassistant аналитика и оцифровка продаж Wildberries и Ozon</h1>
+            <div class="logo-wrapper">
+                <a href="" class="header-logo logo">
+                    <img src="images/small-logo.svg" alt="логотип mpassistant" class="logo-img">
                 </a>
-                <a href="" class="menu__burger burger">
-                    <img src="images/burger.svg" alt="" class="burger__img">
+                <p class="dtitle">Аналитика и оцифровка продаж
+                    <span class="dtitle dtitle--purple">Widberries</span> и
+                    <span class="dtitle dtitle--blue">Ozon</span>
+                </p>
+            </div>
+            <nav class="header-dmenu dmenu">
+                <a href="" class="dmenu-link">О нас</a>
+                <a href="" class="dmenu-link">Возможности</a>
+                <a href="" class="dmenu-link">Тарифы</a>
+            </nav>
+            <div class="header-entrance entrance">
+                <a href="" class="entrance-link entrance-link--log">
+                    <img src="images/dentrance.svg" alt="Знак входа" class="entrance-img">
+                    <span class="entrance-text">Вход</span>
+                </a>
+                <a href="" class="entrance-link entrance-link--reg">Зарегистрироваться</a>
+            </div>
+            <nav class="header-menu menu">
+                <a href="" class="menu-reg reg">
+                    <img src="images/entrance.svg" alt="" class="reg-img">
+                </a>
+                <a href="" class="menu-burger burger">
+                    <img src="images/burger.svg" alt="" class="burger-img">
                 </a>
             </nav>
         </div>
@@ -29,56 +47,62 @@
 
     <main>
         <section class="hero">
-            <div class="hero__wrapper">
-                <div class="hero__text-wrapper">
-                    <h2 class="hero__title">
-                        <span class="hero__title hero__title--green">Внутренняя аналитика</span>
-                        и <span class="hero__title hero__title--blue">финансовый учёт</span>
-                        для бизнеса на маркетплейсах
-                        <img src="images/small-marketplaces-logos.png" alt="Логотип Ozon и WB"
-                            class="hero__marketplaces">
-                    </h2>
-                    <p class="hero__text">
-                        Увеличивай прибыль, автоматизируй рутину
-                        и экономь время на сборе и анализе отчётов
-                    </p>
+            <div class="hero-wrapper">
+                <div class="hero-desktop">
+                    <div class="hero-text-wrapper">
+                        <h2 class="hero-title">
+                            <span class="hero-title hero-title--green">Внутренняя аналитика</span>
+                            и <span class="hero-title hero-title--blue">финансовый учёт</span>
+                            для бизнеса на маркетплейсах
+                            <img src="images/small-marketplaces-logos.png" alt="Логотип Ozon и WB"
+                                class="hero-marketplaces--small">
+                            <img src="images/big-marketplaces-logos.png" alt="Логотип Ozon и WB"
+                                class="hero-marketplaces--big">
+                        </h2>
+                        <p class="hero-text">
+                            Увеличивай прибыль, автоматизируй рутину
+                            и экономь время на сборе и анализе отчётов
+                        </p>
+                    </div>
+                    <div class="hero-feedback feedback">
+                        <p class="feedback-text">
+                            Начните свой 3-дневный пробный период
+                            с неограниченным доступом ко всем
+                            возможностям
+                        </p>
+                        <form class="feedback-form" action="//httpbin.org/post" method="post">
+                            <label class="feedback-label">
+                                <span class="visual">Введите ваш email</span>
+                                <input type="email" name="email" class="feedback-input" placeholder="Введите ваш email"
+                                    required>
+                            </label>
+                            <button type="submit" class="feedback-button feedback-button--submit">Попробовать</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="hero__feedback feedback">
-                    <p class="feedback__text">
-                        Начните свой 3-дневный пробный период
-                        с неограниченным доступом ко всем
-                        возможностям
-                    </p>
-                    <form class="feedback__form" action="//httpbin.org/post" method="post">
-                        <label class="feedback__label">
-                            <span class="visually-hidden">Введите ваш email</span>
-                            <input type="email" name="email" class="feedback__input" placeholder="Введите ваш email" required>
-                        </label>
-                        <button type="submit" class="feedback__button feedback__button--submit">Попробовать</button>
-                    </form>
-                </div>
+                <img src="images/box.svg" alt="Коробки Ozon и Wildberries" class="hero-dimg">
             </div>
         </section>
         <section class="numbers">
-            <div class="numbers__wrapper">
-                <div class="numbers__background">
-                    <h2 class="visually-hidden">Статистика сервиса</h2>
-                    <ul class="numbers__list">
-                        <li class="numbers__item">
-                            <span class="numbers__accent">777</span>
-                            <p class="numbers__text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+            <div class="numbers-wrapper">
+                <div class="numbers-background">
+                    <h2 class="visual">Статистика сервиса</h2>
+                    <ul class="numbers-list">
+                        <li class="numbers-item">
+                            <span class="numbers-accent">777</span>
+                            <p class="numbers-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
                                 и анализе
                                 отчётов</p>
                         </li>
-                        <li class="numbers__item">
-                            <span class="numbers__accent">5</span>
-                            <p class="numbers__text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                        <li class="numbers-item">
+                            <span class="numbers-accent">5</span>
+                            <p class="numbers-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
                                 и анализе
                                 отчётов</p>
                         </li>
-                        <li class="numbers__item">
-                            <span class="numbers__accent">100 000</span>
-                            <p class="numbers__text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
+                        <li class="numbers-item">
+                            <span class="numbers-accent">100 000</span>
+                            <p class="numbers-text">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе
                                 и анализе
                                 отчётов</p>
                         </li>
@@ -88,232 +112,238 @@
         </section>
 
         <section class="features">
-            <div class="features__wrapper">
-                <h2 class="features__title">Возможности сервиса</h2>
-                <ul class="features__analytics analytics">
-                    <li class="analytics__item">
-                        <input type="checkbox" class="analytics__checkbox">
-                        <label class="analytics__subtitle">Финансовая аналитика</label>
-                        <div class="analytics__details details">
-                            <h3 class="details__subtitle">Инструменты для финансовой аналитики</h3>
-                            <ul class="details__tools">
-                                <li class="details__item">
-                                    <img src="images/circle.svg" alt="Декорация списка" class="details__ellipse">
-                                    <p class="details__text">Отчёт о прибылях и убытках (P&L)</p>
+            <div class="features-wrapper">
+                <h2 class="features-title">Возможности сервиса</h2>
+                <ul class="features-analytics analytics">
+                    <li class="analytics-item">
+                        <input type="checkbox" class="analytics-checkbox">
+                        <label class="analytics-subtitle">Финансовая аналитика</label>
+                        <div class="analytics-details details">
+                            <h3 class="details-subtitle">Инструменты для финансовой аналитики</h3>
+                            <ul class="details-tools">
+                                <li class="details-item">
+                                    <img src="images/circle.svg" alt="Декорация списка" class="details-ellipse">
+                                    <p class="details-text">Отчёт о прибылях и убытках (P&L)</p>
                                 </li>
-                                <li class="details__item">
-                                    <img src="images/circle.svg" alt="Декорация списка" class="details__ellipse">
-                                    <p class="details__text">Отчёт о движении денежных средств (ДДС)</p>
+                                <li class="details-item">
+                                    <img src="images/circle.svg" alt="Декорация списка" class="details-ellipse">
+                                    <p class="details-text">Отчёт о движении денежных средств (ДДС)</p>
                                 </li>
-                                <li class="details__item">
-                                    <img src="images/circle.svg" alt="Декорация списка" class="details__ellipse">
-                                    <p class="details__text">Журнал операций</p>
+                                <li class="details-item">
+                                    <img src="images/circle.svg" alt="Декорация списка" class="details-ellipse">
+                                    <p class="details-text">Журнал операций</p>
                                 </li>
-                                <li class="details__item">
-                                    <img src="images/circle.svg" alt="Декорация списка" class="details__ellipse">
-                                    <p class="details__text">Сводка продаж</p>
+                                <li class="details-item">
+                                    <img src="images/circle.svg" alt="Декорация списка" class="details-ellipse">
+                                    <p class="details-text">Сводка продаж</p>
                                 </li>
-                                <li class="details__item">
-                                    <img src="images/circle.svg" alt="Декорация списка" class="details__ellipse">
-                                    <p class="details__text">Учёт самовыкупов</p>
+                                <li class="details-item">
+                                    <img src="images/circle.svg" alt="Декорация списка" class="details-ellipse">
+                                    <p class="details-text">Учёт самовыкупов</p>
                                 </li>
                             </ul>
-                            <img src="images/capabilities-1.jpg" alt="Таблица статистики операций" class="details__img">
-                            <button type="submit" class="details__button">Попробовать бесплатно</button>
+                            <img src="images/capabilities-1.jpg" alt="Таблица статистики операций" class="details-img--small">
+                            <img src="images/capabilities-2.jpg" alt="Таблица статистики операций" class="details-img--big">
+                            <button type="submit" class="details-button">Попробовать бесплатно</button>
                         </div>
                     </li>
-                    <li class="analytics__item">
-                        <input type="checkbox" class="analytics__checkbox">
-                        <label class="analytics__subtitle">Товарная аналитика</label>
+                    <li class="analytics-item">
+                        <input type="checkbox" class="analytics-checkbox">
+                        <label class="analytics-subtitle">Товарная аналитика</label>
                     </li>
-                    <li class="analytics__item">
-                        <input type="checkbox" class="analytics__checkbox">
-                        <label class="analytics__subtitle">Аналитика внутренней рекламы</label>
+                    <li class="analytics-item">
+                        <input type="checkbox" class="analytics-checkbox">
+                        <label class="analytics-subtitle">Аналитика внутренней рекламы</label>
                     </li>
-                    <li class="analytics__item">
-                        <input type="checkbox" class="analytics__checkbox">
-                        <label class="analytics__subtitle">Статистика</label>
+                    <li class="analytics-item">
+                        <input type="checkbox" class="analytics-checkbox">
+                        <label class="analytics-subtitle">Статистика</label>
                     </li>
-                    <li class="analytics__item">
-                        <input type="checkbox" class="analytics__checkbox">
-                        <label class="analytics__subtitle">Инструменты</label>
+                    <li class="analytics-item">
+                        <input type="checkbox" class="analytics-checkbox">
+                        <label class="analytics-subtitle">Инструменты</label>
                     </li>
                 </ul>
-                <div class="features__feedback feedback">
-                    <h2 class="feedback__title">Начните экономить свое время</h2>
-                    <p class="feedback__text">
+                <div class="features-feedback feedback">
+                    <h2 class="feedback-title">Начните экономить свое время</h2>
+                    <p class="feedback-text">
                         3-дневный пробный период
                         с неограниченным доступом ко всем возможностям
                     </p>
-                    <form class="feedback__form" action="//httpbin.org/post" method="post">
-                        <label class="feedback__label">
-                            <span class="visually-hidden">Введите ваш email</span>
-                            <input type="email" name="email" class="feedback__input" placeholder="Введите ваш email" required>
+                    <form class="feedback-form" action="//httpbin.org/post" method="post">
+                        <label class="feedback-label">
+                            <span class="visual">Введите ваш email</span>
+                            <input type="email" name="email" class="feedback-input" placeholder="Введите ваш email"
+                                required>
                         </label>
-                        <button type="submit" class="feedback__button feedback__button--submit">Попробовать</button>
+                        <button type="submit" class="feedback-button feedback-button--submit">Попробовать</button>
                     </form>
-                    <div class="feedback__images images">
-                        <img src="images/women1.png" alt="Женщина с ноутбуком, на фоне часов" class="images__img-clock">
+                    <div class="feedback-images images">
+                        <img src="images/women1.png" alt="Женщина с ноутбуком, на фоне часов" class="images-img-clock">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="info">
-            <div class="info__wrapper">
-                <h2 class="info__title">Собираем единые отчёты по всем вашим магазинам</h2>
-                <p class="info__text">C Mpassistant вы сможете:</p>
-                <ul class="info__offer offer">
-                    <li class="offer__item">
-                        <img src="images/vector.svg" alt="Чекбокс" class="offer__img">
-                        <p class="offer__text">Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте
+            <div class="info-wrapper">
+                <h2 class="info-title">Собираем единые отчёты по всем вашим магазинам</h2>
+                <p class="info-text">C Mpassistant вы сможете:</p>
+                <ul class="info-offer offer">
+                    <li class="offer-item">
+                        <img src="images/vector.svg" alt="Чекбокс" class="offer-img">
+                        <p class="offer-text">Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте
                         </p>
                     </li>
-                    <li class="offer__item">
-                        <img src="images/vector.svg" alt="Чекбокс" class="offer__img">
-                        <p class="offer__text">Не потратите время на сбор данных из нескольких кабинетов
+                    <li class="offer-item">
+                        <img src="images/vector.svg" alt="Чекбокс" class="offer-img">
+                        <p class="offer-text">Не потратите время на сбор данных из нескольких кабинетов
                             или маркетплейсов</p>
                     </li>
-                    <li class="offer__item">
-                        <img src="images/vector.svg" alt="Чекбокс" class="offer__img">
-                        <p class="offer__text">Добавите любое количество магазинов</p>
+                    <li class="offer-item">
+                        <img src="images/vector.svg" alt="Чекбокс" class="offer-img">
+                        <p class="offer-text">Добавите любое количество магазинов</p>
                     </li>
                 </ul>
-                <figure class="info__image">
+                <picture class="info-images">
+                    <source srcset="images/info1.png" class="info-img" media="(min-width: 1100px)">
+                    <source srcset="images/info.png" class="info-img">
                     <img src="images/info.png" alt="Mpassistant собирает отчеты по маркетплейсам Ozon и Widberries"
-                        class="info__img">
-                </figure>
+                    class="info-img">
+                </picture>
             </div>
         </section>
 
         <section class="about">
-            <div class="about__wrapper">
-                <h2 class="about__title">Почему выбирают Mpassistant</h2>
-                <ul class="about__advantages advantages">
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about1.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Точность данных</h3>
+            <div class="about-wrapper">
+                <h2 class="about-title">Почему выбирают Mpassistant</h2>
+                <ul class="about-advantages advantages">
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about1.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Точность данных</h3>
                         </div>
-                        <p class="advantage__text">Данные в отчётах сервиса полностью совпадает с данными ваших
+                        <p class="advantage-text">Данные в отчётах сервиса полностью совпадает с данными ваших
                             магазинов
                             на маркетплейсах.</p>
                     </li>
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about2.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Большой функционал</h3>
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about2.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Большой функционал</h3>
                         </div>
-                        <p class="advantage__text">Полный набор инструментов для внутренней аналитики для Wildberries
+                        <p class="advantage-text">Полный набор инструментов для внутренней аналитики для Wildberries
                             и Ozon.
                             Более 10 полезных отчётов с удобными настраиваемыми фильтрами и параметрами.</p>
                     </li>
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about3.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Лёгкость освоения</h3>
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about3.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Лёгкость освоения</h3>
                         </div>
-                        <p class="advantage__text">Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции
+                        <p class="advantage-text">Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции
                             и видео,
                             помогающие легко читать их и использовать.</p>
                     </li>
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about4.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Подходит всем</h3>
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about4.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Подходит всем</h3>
                         </div>
-                        <p class="advantage__text">Mpassistant создан селлерами для селлеров. Наш опыт в товарном
+                        <p class="advantage-text">Mpassistant создан селлерами для селлеров. Наш опыт в товарном
                             бизнесе
                             и разработке IT систем позволил создать полезный и удобный продукт, поэтому он подойдёт
                             как для новичков, так и для опытных селлеров.</p>
                     </li>
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about5.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Конфиденциальность</h3>
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about5.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Конфиденциальность</h3>
                         </div>
-                        <p class="advantage__text">Ваша конфиденциальность для нас самый главный приоритет. Все ваши
+                        <p class="advantage-text">Ваша конфиденциальность для нас самый главный приоритет. Все ваши
                             данные
                             надёжно сохранены, а информация об этом записана в договоре-оферте. По желанию можем
                             заключить
                             дополнительное соглашение (NDA).</p>
                     </li>
-                    <li class="advantages__advantage advantage">
-                        <div class="advantage__wrapper">
-                            <img src="images/about6.svg" alt="" class="advantage__image">
-                            <h3 class="advantage__title">Служба заботы</h3>
+                    <li class="advantages-advantage advantage">
+                        <div class="advantage-wrapper">
+                            <img src="images/about6.svg" alt="" class="advantage-image">
+                            <h3 class="advantage-title">Служба заботы</h3>
                         </div>
-                        <p class="advantage__text">Наша служба заботы готова решить практически любые вопросы и в режиме
+                        <p class="advantage-text">Наша служба заботы готова решить практически любые вопросы и в режиме
                             24/7.
                         </p>
                     </li>
                 </ul>
-                <div class="about__feedback feedback">
-                    <h2 class="feedback__title">Попробуйте бесплатно</h2>
-                    <p class="feedback__text">
+                <div class="about-feedback feedback">
+                    <h2 class="feedback-title">Попробуйте бесплатно</h2>
+                    <p class="feedback-text">
                         Начните свой 3-дневный пробный период
                         с неограниченным доступом ко всем возможностям
                     </p>
-                    <form class="feedback__form" action="//httpbin.org/post" method="post">
-                        <label class="feedback__label">
-                            <span class="visually-hidden">Введите ваш email</span>
-                            <input type="email" name="email" class="feedback__input" placeholder="Введите ваш email" required>
+                    <form class="feedback-form" action="//httpbin.org/post" method="post">
+                        <label class="feedback-label">
+                            <span class="visual">Введите ваш email</span>
+                            <input type="email" name="email" class="feedback-input" placeholder="Введите ваш email"
+                                required>
                         </label>
-                        <button type="submit" class="feedback__button feedback__button--submit">Попробовать</button>
+                        <button type="submit" class="feedback-button feedback-button--submit">Попробовать</button>
                     </form>
-                    <div class="feedback__images images">
-                        <img src="images/women2.png" alt="Женщина с ноутбуком, на фоне подарков" class="images__img-gift">
+                    <div class="feedback-images images">
+                        <img src="images/women2.png" alt="Женщина с ноутбуком, на фоне подарков"
+                            class="images-img-gift">
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="subscribe">
-            <div class="subscribe__wrapper">
-                <h2 class="subscribe__title">Выберите тариф</h2>
-                <ul class="subscribe__list list">
-                    <li class="list__month month">
-                        <button class="month__subtitle">1 месяц</button>
-                    <li class="list__month month">
-                        <button class="month__subtitle">3 месяца</button>
+            <div class="subscribe-wrapper">
+                <h2 class="subscribe-title">Выберите тариф</h2>
+                <ul class="subscribe-list list">
+                    <li class="list-month month">
+                        <button class="month-subtitle">1 месяц</button>
+                    <li class="list-month month">
+                        <button class="month-subtitle-white">3 месяца</button>
                     </li>
-                    <li class="list__month month">
-                        <button class="month__subtitle">6 месяцев</button>
+                    <li class="list-month month">
+                        <button class="month-subtitle-white">6 месяцев</button>
                     </li>
-                    <li class="list__month month">
-                        <button class="month__subtitle">12 месяцев</button>
+                    <li class="list-month month">
+                        <button class="month-subtitle-white">12 месяцев</button>
                     </li>
-                </li>
+                    </li>
                 </ul>
-                <ul class="month__price">
-                    <li class="list__price price">
-                        <h3 class="price__subtitle">Стартовый</h3>
-                        <p class="price__text price__text--blue">4 999 р</p>
-                        <a href="" class="price__link price__link--try">Попробовать</a>
-                        <a href="" class="price__link price__link--detail">Подробнее</a>
+                <ul class="month-price">
+                    <li class="list-price price">
+                        <h3 class="price-subtitle">Стартовый</h3>
+                        <p class="price-text price-text--blue">4 999 р</p>
+                        <a href="" class="price-link price-link--try">Попробовать</a>
+                        <a href="" class="price-link price-link--detail">Подробнее</a>
                     </li>
-                    <li class="list__price price">
-                        <h3 class="price__subtitle">Стартовый +</h3>
-                        <p class="price__text price__text--grey">4 491 р/мес</p>
-                        <p class="price__text price__text--blue">13 473 р</p>
-                        <a href="" class="price__link price__link--try">Попробовать</a>
-                        <a href="" class="price__link price__link--detail">Подробнее</a>
+                    <li class="list-price price">
+                        <h3 class="price-subtitle">Стартовый +</h3>
+                        <p class="price-text price-text--grey">4 491 р/мес</p>
+                        <p class="price-text price-text--blue">13 473 р</p>
+                        <a href="" class="price-link price-link--try">Попробовать</a>
+                        <a href="" class="price-link price-link--detail">Подробнее</a>
                     </li>
-                    <li class="list__price list__price--pro price">
-                        <h3 class="price__subtitle">Профи</h3>
-                        <p class="price__text price__text--grey">4 241 р/мес</p>
-                        <p class="price__text price__text--blue">25 446 р</p>
-                        <a href="" class="price__link price__link--try">Попробовать</a>
-                        <a href="" class="price__link price__link--detail">Подробнее</a>
+                    <li class="list-price list-price--pro price">
+                        <h3 class="price-subtitle">Профи</h3>
+                        <p class="price-text price-text--grey">4 241 р/мес</p>
+                        <p class="price-text price-text--blue">25 446 р</p>
+                        <a href="" class="price-link price-link--try">Попробовать</a>
+                        <a href="" class="price-link price-link--detail">Подробнее</a>
                     </li>
-                    <li class="list__price list__price--seller price">
-                        <h3 class="price__subtitle">Начинающим селлерам с выручкой</h3>
-                        <p class="price__text price__text--grey">до 200 000 р/мес</p>
-                        <p class="price__text price__text--blue">Бесплатно</p>
-                        <a href="" class="price__link price__link--try">Попробовать</a>
-                        <a href="" class="price__link price__link--detail">Подробнее</a>
-                        <div class="price__images images">
-                            <img src="images/women4.png" alt="Женщина на фоне подарков" class="images__img">
+                    <li class="list-price list-price--seller price">
+                        <h3 class="price-subtitle">Начинающим селлерам с выручкой</h3>
+                        <p class="price-text price-text--grey">до 200 000 р/мес</p>
+                        <p class="price-text price-text--blue">Бесплатно</p>
+                        <a href="" class="price-link price-link--try">Попробовать</a>
+                        <a href="" class="price-link price-link--detail">Подробнее</a>
+                        <div class="price-images images">
+                            <img src="images/women4.png" alt="Женщина на фоне подарков" class="images-img">
                         </div>
                     </li>
                 </ul>
@@ -321,13 +351,13 @@
         </section>
 
         <section class="reviews">
-            <div class="reviews__wrapper">
-                <h2 class="reviews__title">Отзывы</h2>
-                <ul class="reviews__users users">
-                    <li class="users__item">
-                        <img src="images/users-background.png" alt="" class="users__background">
-                        <blockquote class="users__blockquote blockquote">
-                            <p class="blockquote__text">Изначально нашёл сервис в поиске Яндекса, когда искал
+            <div class="reviews-wrapper">
+                <h2 class="reviews-title">Отзывы</h2>
+                <ul class="reviews-users users">
+                    <li class="users-item">
+                        <img src="images/users-background.png" alt="" class="users-background">
+                        <blockquote class="users-blockquote blockquote">
+                            <p class="blockquote-text">Изначально нашёл сервис в поиске Яндекса, когда искал
                                 калькулятор
                                 unit-экономики товара. Калькулятор полностью устроил и решил пользоваться самим сайтом.
                                 К тому же это было для меня бесплатно, так как проходил по условиям бесплатного доступа:
@@ -342,22 +372,22 @@
                                 Удобно анализировать финансовую составляющую.
                                 Бывают акции, когда можно хорошо сэкономить на подписке.
                                 Желаю сервису развития и успехов!</p>
-                            <cite class="blockquote__cite">- Алексей</cite>
+                            <p><a href="" class="users-link">Читать полностью
+                                <img src="images/expand.svg" alt="Знак развернуть" class="users-img">
+                            </a></p>
+                            <cite class="blockquote-cite">- Алексей</cite>
                         </blockquote>
-                        <a href="" class="users__link">Читать полностью
-                            <img src="images/expand.svg" alt="Знак развернуть" class="users__img">
-                        </a>
                     </li>
-                    <li class="users__item">
-                        <img src="images/users-background.png" alt="" class="users__background">
-                        <blockquote class="users__blockquote blockquote">
-                            <p class="blockquote__text">Функционал сервиса, тот что есть — полностью устраивает. Хочется
+                    <li class="users-item">
+                        <img src="images/users-background.png" alt="" class="users-background">
+                        <blockquote class="users-blockquote blockquote">
+                            <p class="blockquote-text">Функционал сервиса, тот что есть — полностью устраивает. Хочется
                                 ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!</p>
-                            <cite class="blockquote__cite">- Владислав</cite>
+                            <p><a href="" class="users-link">Читать полностью
+                                <img src="images/expand.svg" alt="Знак развернуть" class="users-img">
+                            </a></p>
+                            <cite class="blockquote-cite">- Владислав</cite>
                         </blockquote>
-                        <a href="" class="users__link">Читать полностью
-                            <img src="images/expand.svg" alt="Знак развернуть" class="users__img">
-                        </a>
                     </li>
                 </ul>
             </div>
@@ -365,97 +395,97 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__wrapper">
-            <a href="" class="footer__logo logo">
-                <img src="images/small-logo.svg" alt="Логотип Mpassistant" class="logo__img">
+        <div class="footer-wrapper">
+            <a href="" class="footer-logo logo">
+                <img src="images/small-logo.svg" alt="Логотип Mpassistant" class="logo-img">
             </a>
-            <h2 class="footer__subtitle">
+            <h2 class="footer-subtitle">
                 Аналитика и оцифровка продаж
-                <span class="footer__subtitle footer__subtitle--purple">Wildberries</span> и
-                <span class="footer__subtitle footer__subtitle--blue">Ozon</span>
+                <span class="footer-subtitle footer-subtitle--purple">Wildberries</span> и
+                <span class="footer-subtitle footer-subtitle--blue">Ozon</span>
             </h2>
-            <ul class="footer__social-services social-services">
-                <li class="social-services__item">
-                    <a href="" class="social-services__logo logo">
-                        <img src="images/vk.svg" alt="ссылка на группу компании в вк" class="logo__social">
+            <ul class="footer-social-services social-services">
+                <li class="social-services-item">
+                    <a href="" class="social-services-logo logo">
+                        <img src="images/vk.svg" alt="ссылка на группу компании в вк" class="logo-social">
                     </a>
                 </li>
-                <li class="social-services__item">
-                    <a href="" class="social-services__logo logo">
-                        <img src="images/tg.svg" alt="ссылка на группу компании в телеграме" class="logo__social">
+                <li class="social-services-item">
+                    <a href="" class="social-services-logo logo">
+                        <img src="images/tg.svg" alt="ссылка на группу компании в телеграме" class="logo-social">
                     </a>
                 </li>
-                <li class="social-services__item">
-                    <a href="" class="social-services__logo logo">
-                        <img src="images/youtube.svg" alt="ссылка на канал компании в ютубе" class="logo__social">
+                <li class="social-services-item">
+                    <a href="" class="social-services-logo logo">
+                        <img src="images/youtube.svg" alt="ссылка на канал компании в ютубе" class="logo-social">
                     </a>
                 </li>
             </ul>
-            <div class="footer__container">
-                <div class="footer__service service">
-                    <h3 class="service__subtitle">Сервис</h3>
-                    <nav class="service__navigation navigation">
-                        <a href="" class="navigation__button">Для кого</a>
-                        <a href="" class="navigation__button">Возможности</a>
-                        <a href="" class="navigation__button">Тарифы</a>
+            <div class="footer-container">
+                <div class="footer-service service">
+                    <h3 class="service-subtitle">Сервис</h3>
+                    <nav class="service-navigation navigation">
+                        <a href="" class="navigation-button">Для кого</a>
+                        <a href="" class="navigation-button">Возможности</a>
+                        <a href="" class="navigation-button">Тарифы</a>
                     </nav>
                 </div>
-                <div class="footer__clients clients">
-                    <h3 class="clients__subtitle">Клиентам</h3>
-                    <nav class="clients__navigation navigation">
-                        <a href="" class="navigation__button">Вход</a>
-                        <a href="" class="navigation__button">Регистрация</a>
-                        <a href="" class="navigation__button">Восстановления пароля</a>
+                <div class="footer-clients clients">
+                    <h3 class="clients-subtitle">Клиентам</h3>
+                    <nav class="clients-navigation navigation">
+                        <a href="" class="navigation-button">Вход</a>
+                        <a href="" class="navigation-button">Регистрация</a>
+                        <a href="" class="navigation-button">Восстановления пароля</a>
                     </nav>
                 </div>
-                <div class="footer__documentation documentation">
-                    <h3 class="documentation__subtitle">Документы</h3>
-                    <nav class="documentation__navigation navigation">
-                        <a href="" class="navigation__button">Пользовательское соглашение</a>
-                        <a href="" class="navigation__button">Политика конфиденциальности</a>
-                        <a href="" class="navigation__button">Публичная оферта</a>
-                        <a href="" class="navigation__button">Использование cookie</a>
-                        <a href="" class="navigation__button">Техническая поддержка</a>
+                <div class="footer-documentation documentation">
+                    <h3 class="documentation-subtitle">Документы</h3>
+                    <nav class="documentation-navigation navigation">
+                        <a href="" class="navigation-button">Пользовательское соглашение</a>
+                        <a href="" class="navigation-button">Политика конфиденциальности</a>
+                        <a href="" class="navigation-button">Публичная оферта</a>
+                        <a href="" class="navigation-button">Использование cookie</a>
+                        <a href="" class="navigation-button">Техническая поддержка</a>
                     </nav>
                 </div>
             </div>
-            <ul class="footer__payment payment">
-                <li class="payment__cards">
-                    <a href="" class="payment__card">
+            <ul class="footer-payment payment">
+                <li class="payment-cards">
+                    <a href="" class="payment-card">
                         <img src="images/modulbank.png" alt="поддержка оплаты банковской картой модульбанк"
-                            class="payment__img">
+                            class="payment-img">
                     </a>
                 </li>
-                <li class="payment__cards">
-                    <a href="" class="payment__card">
-                        <img src="images/visa.png" alt="поддержка оплаты банковской картой visa" class="payment__img">
+                <li class="payment-cards">
+                    <a href="" class="payment-card">
+                        <img src="images/visa.png" alt="поддержка оплаты банковской картой visa" class="payment-img">
                     </a>
                 </li>
-                <li class="payment__cards">
-                    <a href="" class="payment__card">
+                <li class="payment-cards">
+                    <a href="" class="payment-card">
                         <img src="images/mastercard.png" alt="поддержка оплаты банковской картой mastercard"
-                            class="payment__img">
+                            class="payment-img">
                     </a>
                 </li>
-                <li class="payment__cards">
-                    <a href="" class="payment__card">
+                <li class="payment-cards">
+                    <a href="" class="payment-card">
                         <img src="images/maestro.png" alt="поддержка оплаты банковской картой maestro"
-                            class="payment__img">
+                            class="payment-img">
                     </a>
                 </li>
-                <li class="payment__cards">
-                    <a href="" class="payment__card">
-                        <img src="images/mir.png" alt="поддержка оплаты банковской картой мир" class="payment__img">
+                <li class="payment-cards">
+                    <a href="" class="payment-card">
+                        <img src="images/mir.png" alt="поддержка оплаты банковской картой мир" class="payment-img">
                     </a>
                 </li>
             </ul>
-            <p class="footer__copyright">© 2022-2023 mpassistant</p>
-            <p class="footer__text">Информация, размещённая на сайте, не является публичной офертой</p>
-            <p class="footer__designer">Редизайн сайта
-                <span class="footer__designer footer__designer--green">Turkuletdesign</span>
+            <p class="footer-copyright">© 2022-2023 mpassistant</p>
+            <p class="footer-text">Информация, размещённая на сайте, не является публичной офертой</p>
+            <p class="footer-designer">Редизайн сайта
+                <span class="footer-designer footer-designer--green">Turkuletdesign</span>
             </p>
-            <a href="grid.html" class="">Гриды</a>
-            <a href="form.html" class="">Форма</a>
+            <a href="grid.html" class="grid">Гриды</a>
+            <a href="form.html" class="forma">Форма</a>
         </div>
     </footer>
 
